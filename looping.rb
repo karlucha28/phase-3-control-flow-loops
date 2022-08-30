@@ -1,4 +1,11 @@
 def happy_new_year
+  i = 10
+  while i > 0
+    puts i
+    i -= 1
+   
+  end
+  puts "Happy New Year!"
   # your code here
 end
 
@@ -16,9 +23,19 @@ def fizzbuzz(num)
 end
 
 def fizzbuzz_printer
+  (1..100).each do |i|
+  puts fizzbuzz(i)
+end
   # your code here
 end
 
 def reverse_string(str)
+  rev_str=""
+  str.length.times do |i|
+    rev_str = str[i] + rev_str
+  end
+  rev_str
   # your code here
 end
+
+
